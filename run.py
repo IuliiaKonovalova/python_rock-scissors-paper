@@ -1,4 +1,6 @@
 import random
+import os
+from simple_term_menu import TerminalMenu
 
 def play():
     user = ''
@@ -16,5 +18,8 @@ def is_win(player, comp):
   #returns true if the player is a winner
   if (player == 'r' and comp == 's') or (player == 's' and comp == 'p') or (player == 'p' and comp == 'r'):
           return True
+
+
+def main():
 
 play()
