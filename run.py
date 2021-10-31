@@ -1,7 +1,9 @@
 import random
 
 def play():
-    user = input("Choose 'r' for Rock\nChoose 's' for Scissors\nChoose 'p' for Paper\n").lower()
+    user = ''
+    while user not in ['r', 'p', 's']:
+      user = input("Choose 'r' for Rock\nChoose 's' for Scissors\nChoose 'p' for Paper\n").lower()
     computer = random.choice(['r', 'p', 's'])
     if user == computer:
         print('tie')
